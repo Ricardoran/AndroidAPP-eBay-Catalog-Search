@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/tooltip"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cart_orange">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="05dp"
+            android:tint="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            app:theme="@style/SelectableItemBackground"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:paddingRight="10dp"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/redirect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="05dp"
+            android:padding="05dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            app:theme="@style/SelectableItemBackground"
+            android:tint="@color/colorWhite"
+            android:src="@drawable/ic_redirect" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_below="@id/tooltip"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorWhite"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:layout_editor_absoluteX="8dp" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.hw9"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:8:5-76
+13-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:9:5-81
+14-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.ACCESS_COURSE_LOCATION" />
+15-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:11:5-79
+16-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+17-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:12:5-78
+17-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:12:22-75
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:16.0.0] /Users/haoran/.gradle/caches/transforms-2/files-2.1/c3a260d1f5697887cfe463175811e961/play-services-maps-16.0.0/AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:16.0.0] /Users/haoran/.gradle/caches/transforms-2/files-2.1/c3a260d1f5697887cfe463175811e961/play-services-maps-16.0.0/AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:16.0.0] /Users/haoran/.gradle/caches/transforms-2/files-2.1/c3a260d1f5697887cfe463175811e961/play-services-maps-16.0.0/AndroidManifest.xml:28:9-32
+22
+23    <application
+23-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:14:5-46:19
+24        android:allowBackup="true"
+24-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:15:9-35
+25        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+25-->[com.android.support:support-compat:28.0.0] /Users/haoran/.gradle/caches/transforms-2/files-2.1/ccbd3881d3e597a650ace942161206f5/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:16:9-43
+29        android:label="@string/app_name"
+29-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:17:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:18:9-54
+31        android:supportsRtl="true"
+31-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:19:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme"
+33-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:20:9-40
+34        android:usesCleartextTraffic="true" >
+34-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:21:9-44
+35        <activity
+35-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:23:9-31:20
+36            android:name="com.example.hw9.ui.activity.SplashScreen"
+36-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:23:19-59
+37            android:theme="@style/AppTheme_new" >
+37-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:24:13-48
+38            <intent-filter>
+38-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:26:13-30:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:27:17-69
+39-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:27:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:29:17-77
+41-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:29:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:33:9-35:63
+46            android:name="com.google.android.actions"
+46-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:34:13-54
+47            android:resource="@xml/network_security_config" />
+47-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:35:13-60
+48
+49        <activity
+49-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:37:9-38:45
+50            android:name="com.example.hw9.ui.activity.MainActivity"
+50-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:37:19-59
+51            android:launchMode="singleTop" />
+51-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:38:13-43
+52        <!-- xsx -->
+53
+54        <activity
+54-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:41:9-44:70
+55            android:name="com.example.hw9.ui.activity.ProductResults"
+55-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:42:13-55
+56            android:launchMode="singleTop"
+56-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:43:13-43
+57            android:parentActivityName="com.example.hw9.ui.activity.MainActivity" />
+57-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:44:13-67
+58        <activity android:name="com.example.hw9.ActivityProductDetails" />
+58-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:45:9-60
+58-->/Users/haoran/Desktop/Web/hw9/frontend/android2/app/src/main/AndroidManifest.xml:45:19-57
+59        <activity
+59-->[com.google.android.gms:play-services-base:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/0d4dd6c1aca5f294d8b506dd434c1fe2/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+60-->[com.google.android.gms:play-services-base:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/0d4dd6c1aca5f294d8b506dd434c1fe2/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+61            android:exported="false"
+61-->[com.google.android.gms:play-services-base:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/0d4dd6c1aca5f294d8b506dd434c1fe2/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+62-->[com.google.android.gms:play-services-base:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/0d4dd6c1aca5f294d8b506dd434c1fe2/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+63
+64        <meta-data
+64-->[com.google.android.gms:play-services-basement:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/898a00c3fe729cbe3052473afebb7528/play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+65            android:name="com.google.android.gms.version"
+65-->[com.google.android.gms:play-services-basement:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/898a00c3fe729cbe3052473afebb7528/play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+66            android:value="@integer/google_play_services_version" />
+66-->[com.google.android.gms:play-services-basement:16.0.1] /Users/haoran/.gradle/caches/transforms-2/files-2.1/898a00c3fe729cbe3052473afebb7528/play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+67    </application>
+68
+69</manifest>

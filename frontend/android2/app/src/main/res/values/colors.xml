@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2F00A6</color>
+    <color name="colorPrimary">#5100E3</color>
+    <color name="colorAccent">#2F00A6</color>
+    <color name="colorRed">#ED2939</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorCheckbox">#D175E1</color>
+
+    <color name="grey">#ACACAC</color>
+    <color name="cart_orange">#CA8D78</color>
+    <color name="colorlogin">#3b68ee</color>
+
+
+</resources>

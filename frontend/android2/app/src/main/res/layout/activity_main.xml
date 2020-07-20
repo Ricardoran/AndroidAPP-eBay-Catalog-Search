@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activity.MainActivity">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar"/>
+
+
+<!--        Keyword-->
+    <TextView
+        android:id="@+id/keyword_text_id"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyword_text"
+        android:textStyle="bold"
+        android:textColor="@color/colorlogin"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/keyword_id"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/keyword"
+        android:inputType="text" />
+
+    <!--        Keyword error-->
+    <TextView
+        android:id="@+id/keyword_error_id"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_msg"
+        android:textStyle="italic"
+        android:textColor="@color/colorRed"
+        android:visibility="gone"
+        />
+    <!--Price range-->
+
+
+    <TextView
+        android:id="@+id/price_range_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/price_range"
+        android:textStyle="bold"
+        android:textColor="@color/colorlogin"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/price_row_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/min_price_id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/min_price"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/max_price_id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/max_price"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price_error_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priceerror_msg"
+        android:textStyle="italic"
+        android:textColor="@color/colorRed"
+        android:visibility="gone"/>
+
+
+
+
+
+    <!--            condition-->
+    <TextView
+        android:id="@+id/condition_text_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/condition"
+        android:textColor="@color/colorlogin"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/condition_row_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/new_id"
+            app:theme="@style/cb_theme"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="italic"
+            android:text="New"
+            android:textColor="#666"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteY="342dp" />
+
+        <CheckBox
+            android:id="@+id/used_id"
+            app:theme="@style/cb_theme"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="italic"
+            android:textColor="#666"
+            android:textSize="15dp"
+            android:text="Used" />
+
+        <CheckBox
+            android:id="@+id/unspecified_id"
+            app:theme="@style/cb_theme"
+            android:layout_width="124dp"
+            android:layout_height="46dp"
+            android:text="Unspecified"
+            android:textStyle="italic"
+            android:textColor="#666"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="240dp" />
+    </LinearLayout>
+
+
+    <!--        sort by-->
+    <TextView
+        android:id="@+id/soryby_text_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_by"
+        android:textColor="@color/colorlogin"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginTop="6dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8">
+        <Spinner
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/sortby_id" />
+    </RelativeLayout>
+
+
+
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/button_row_id"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search_button_id"
+            style="?android:textAppearanceSmall"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorlogin"
+            android:textColor="@color/colorWhite"
+            android:text="@string/search"
+            android:layout_marginRight="05dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clear_button_id"
+            style="?android:textAppearanceSmall"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@color/colorlogin"
+            android:textColor="@color/colorWhite"
+            android:text="@string/clear"
+            android:layout_marginLeft="05dp"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
